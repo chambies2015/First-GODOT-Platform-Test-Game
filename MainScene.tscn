@@ -1,0 +1,376 @@
+[gd_scene load_steps=11 format=3 uid="uid://bjbsd08hlygca"]
+
+[ext_resource type="PackedScene" uid="uid://8bcmajcjqy7d" path="res://Player.tscn" id="1_o50s1"]
+[ext_resource type="PackedScene" uid="uid://kg83vuwonb6f" path="res://Tile.tscn" id="2_st113"]
+[ext_resource type="PackedScene" uid="uid://ng6ga3wfmjjf" path="res://Enemy.tscn" id="3_t0sa1"]
+[ext_resource type="Script" path="res://CameraController.gd" id="4_bdaen"]
+[ext_resource type="PackedScene" uid="uid://dae604kv061g" path="res://Coin.tscn" id="5_um6fm"]
+[ext_resource type="PackedScene" uid="uid://datrmv7wb77pm" path="res://UI.tscn" id="6_hatjp"]
+[ext_resource type="AudioStream" uid="uid://bx650j5bcihd2" path="res://Audio/coin.ogg" id="7_17wtv"]
+[ext_resource type="Script" path="res://AudioPlayer.gd" id="7_j3ujg"]
+[ext_resource type="AudioStream" uid="uid://jhs8w3a8csp1" path="res://Audio/roblox-death-sound_1-[AudioTrimmer.com].mp3" id="7_k374t"]
+[ext_resource type="Script" path="res://DeathAudio.gd" id="8_y0vdh"]
+
+[node name="MainScene" type="Node2D"]
+
+[node name="Player" parent="." instance=ExtResource("1_o50s1")]
+position = Vector2(80, 56)
+
+[node name="Tile" parent="." instance=ExtResource("2_st113")]
+position = Vector2(32, 160)
+
+[node name="Tile2" parent="." instance=ExtResource("2_st113")]
+position = Vector2(96, 160)
+
+[node name="Tile3" parent="." instance=ExtResource("2_st113")]
+position = Vector2(224, 160)
+
+[node name="Tile6" parent="." instance=ExtResource("2_st113")]
+position = Vector2(480, 288)
+
+[node name="Tile7" parent="." instance=ExtResource("2_st113")]
+position = Vector2(544, 288)
+
+[node name="Tile8" parent="." instance=ExtResource("2_st113")]
+position = Vector2(608, 288)
+
+[node name="Tile9" parent="." instance=ExtResource("2_st113")]
+position = Vector2(672, 288)
+
+[node name="Tile54" parent="." instance=ExtResource("2_st113")]
+position = Vector2(736, 224)
+
+[node name="Tile30" parent="." instance=ExtResource("2_st113")]
+position = Vector2(416, 288)
+
+[node name="Tile31" parent="." instance=ExtResource("2_st113")]
+position = Vector2(352, 224)
+
+[node name="Tile27" parent="." instance=ExtResource("2_st113")]
+position = Vector2(864, 160)
+
+[node name="Tile28" parent="." instance=ExtResource("2_st113")]
+position = Vector2(928, 160)
+
+[node name="Tile10" parent="." instance=ExtResource("2_st113")]
+position = Vector2(32, 544)
+
+[node name="Tile33" parent="." instance=ExtResource("2_st113")]
+position = Vector2(96, 672)
+
+[node name="Tile34" parent="." instance=ExtResource("2_st113")]
+position = Vector2(160, 672)
+
+[node name="Tile35" parent="." instance=ExtResource("2_st113")]
+position = Vector2(224, 672)
+
+[node name="Tile36" parent="." instance=ExtResource("2_st113")]
+position = Vector2(288, 672)
+
+[node name="Tile37" parent="." instance=ExtResource("2_st113")]
+position = Vector2(352, 672)
+
+[node name="Tile38" parent="." instance=ExtResource("2_st113")]
+position = Vector2(416, 672)
+
+[node name="Tile39" parent="." instance=ExtResource("2_st113")]
+position = Vector2(480, 672)
+
+[node name="Tile40" parent="." instance=ExtResource("2_st113")]
+position = Vector2(544, 672)
+
+[node name="Tile41" parent="." instance=ExtResource("2_st113")]
+position = Vector2(608, 672)
+
+[node name="Tile42" parent="." instance=ExtResource("2_st113")]
+position = Vector2(672, 672)
+
+[node name="Tile43" parent="." instance=ExtResource("2_st113")]
+position = Vector2(736, 672)
+
+[node name="Tile44" parent="." instance=ExtResource("2_st113")]
+position = Vector2(800, 672)
+
+[node name="Tile45" parent="." instance=ExtResource("2_st113")]
+position = Vector2(864, 672)
+
+[node name="Tile46" parent="." instance=ExtResource("2_st113")]
+position = Vector2(928, 672)
+
+[node name="Tile47" parent="." instance=ExtResource("2_st113")]
+position = Vector2(992, 672)
+
+[node name="Tile48" parent="." instance=ExtResource("2_st113")]
+position = Vector2(1056, 672)
+
+[node name="Tile49" parent="." instance=ExtResource("2_st113")]
+position = Vector2(1120, 672)
+
+[node name="Tile32" parent="." instance=ExtResource("2_st113")]
+position = Vector2(32, 672)
+
+[node name="Tile11" parent="." instance=ExtResource("2_st113")]
+position = Vector2(1120, 608)
+
+[node name="Tile12" parent="." instance=ExtResource("2_st113")]
+position = Vector2(1120, 96)
+
+[node name="Tile14" parent="." instance=ExtResource("2_st113")]
+position = Vector2(1120, 96)
+
+[node name="Tile13" parent="." instance=ExtResource("2_st113")]
+position = Vector2(1056, 608)
+
+[node name="Tile15" parent="." instance=ExtResource("2_st113")]
+position = Vector2(992, 608)
+
+[node name="Tile16" parent="." instance=ExtResource("2_st113")]
+position = Vector2(928, 544)
+
+[node name="Tile17" parent="." instance=ExtResource("2_st113")]
+position = Vector2(800, 544)
+
+[node name="Tile50" parent="." instance=ExtResource("2_st113")]
+position = Vector2(928, 352)
+
+[node name="Tile55" parent="." instance=ExtResource("2_st113")]
+position = Vector2(1184, 480)
+
+[node name="Tile56" parent="." instance=ExtResource("2_st113")]
+position = Vector2(1184, 416)
+
+[node name="Tile57" parent="." instance=ExtResource("2_st113")]
+position = Vector2(1184, 352)
+
+[node name="Tile58" parent="." instance=ExtResource("2_st113")]
+position = Vector2(1184, 288)
+
+[node name="Tile59" parent="." instance=ExtResource("2_st113")]
+position = Vector2(1184, 224)
+
+[node name="Tile60" parent="." instance=ExtResource("2_st113")]
+position = Vector2(1184, 160)
+
+[node name="Tile61" parent="." instance=ExtResource("2_st113")]
+position = Vector2(1184, 96)
+
+[node name="Tile62" parent="." instance=ExtResource("2_st113")]
+position = Vector2(1184, 32)
+
+[node name="Tile66" parent="." instance=ExtResource("2_st113")]
+position = Vector2(1184, -32)
+
+[node name="Tile67" parent="." instance=ExtResource("2_st113")]
+position = Vector2(1120, -96)
+
+[node name="Tile69" parent="." instance=ExtResource("2_st113")]
+position = Vector2(1056, -96)
+
+[node name="Tile70" parent="." instance=ExtResource("2_st113")]
+position = Vector2(992, -96)
+
+[node name="Tile71" parent="." instance=ExtResource("2_st113")]
+position = Vector2(928, -96)
+
+[node name="Tile72" parent="." instance=ExtResource("2_st113")]
+position = Vector2(864, -96)
+
+[node name="Tile73" parent="." instance=ExtResource("2_st113")]
+position = Vector2(736, -96)
+
+[node name="Tile75" parent="." instance=ExtResource("2_st113")]
+position = Vector2(672, -96)
+
+[node name="Tile76" parent="." instance=ExtResource("2_st113")]
+position = Vector2(608, -96)
+
+[node name="Tile77" parent="." instance=ExtResource("2_st113")]
+position = Vector2(544, -96)
+
+[node name="Tile78" parent="." instance=ExtResource("2_st113")]
+position = Vector2(480, -96)
+
+[node name="Tile79" parent="." instance=ExtResource("2_st113")]
+position = Vector2(416, -96)
+
+[node name="Tile80" parent="." instance=ExtResource("2_st113")]
+position = Vector2(352, -96)
+
+[node name="Tile81" parent="." instance=ExtResource("2_st113")]
+position = Vector2(288, -96)
+
+[node name="Tile82" parent="." instance=ExtResource("2_st113")]
+position = Vector2(224, -96)
+
+[node name="Tile83" parent="." instance=ExtResource("2_st113")]
+position = Vector2(160, -96)
+
+[node name="Tile84" parent="." instance=ExtResource("2_st113")]
+position = Vector2(32, -96)
+
+[node name="Tile86" parent="." instance=ExtResource("2_st113")]
+position = Vector2(-32, -96)
+
+[node name="Tile87" parent="." instance=ExtResource("2_st113")]
+position = Vector2(-32, -32)
+
+[node name="Tile88" parent="." instance=ExtResource("2_st113")]
+position = Vector2(-32, 32)
+
+[node name="Tile89" parent="." instance=ExtResource("2_st113")]
+position = Vector2(-32, 96)
+
+[node name="Tile90" parent="." instance=ExtResource("2_st113")]
+position = Vector2(-32, 160)
+
+[node name="Tile91" parent="." instance=ExtResource("2_st113")]
+position = Vector2(-32, 224)
+
+[node name="Tile92" parent="." instance=ExtResource("2_st113")]
+position = Vector2(-32, 288)
+
+[node name="Tile93" parent="." instance=ExtResource("2_st113")]
+position = Vector2(-32, 352)
+
+[node name="Tile94" parent="." instance=ExtResource("2_st113")]
+position = Vector2(-32, 416)
+
+[node name="Tile95" parent="." instance=ExtResource("2_st113")]
+position = Vector2(-32, 480)
+
+[node name="Tile96" parent="." instance=ExtResource("2_st113")]
+position = Vector2(-32, 544)
+
+[node name="Tile97" parent="." instance=ExtResource("2_st113")]
+position = Vector2(-32, 608)
+
+[node name="Tile98" parent="." instance=ExtResource("2_st113")]
+position = Vector2(-32, 672)
+
+[node name="Tile85" parent="." instance=ExtResource("2_st113")]
+position = Vector2(96, -96)
+
+[node name="Tile74" parent="." instance=ExtResource("2_st113")]
+position = Vector2(800, -96)
+
+[node name="Tile68" parent="." instance=ExtResource("2_st113")]
+position = Vector2(1184, -96)
+
+[node name="Tile63" parent="." instance=ExtResource("2_st113")]
+position = Vector2(1184, 544)
+
+[node name="Tile64" parent="." instance=ExtResource("2_st113")]
+position = Vector2(1184, 608)
+
+[node name="Tile65" parent="." instance=ExtResource("2_st113")]
+position = Vector2(1184, 672)
+
+[node name="Tile51" parent="." instance=ExtResource("2_st113")]
+position = Vector2(1120, 288)
+
+[node name="Tile52" parent="." instance=ExtResource("2_st113")]
+position = Vector2(1120, 544)
+
+[node name="Tile53" parent="." instance=ExtResource("2_st113")]
+position = Vector2(1056, 288)
+
+[node name="Tile18" parent="." instance=ExtResource("2_st113")]
+position = Vector2(736, 608)
+
+[node name="Tile19" parent="." instance=ExtResource("2_st113")]
+position = Vector2(608, 608)
+
+[node name="Tile20" parent="." instance=ExtResource("2_st113")]
+position = Vector2(480, 608)
+
+[node name="Tile22" parent="." instance=ExtResource("2_st113")]
+position = Vector2(96, 352)
+
+[node name="Tile25" parent="." instance=ExtResource("2_st113")]
+position = Vector2(32, 352)
+
+[node name="Tile23" parent="." instance=ExtResource("2_st113")]
+position = Vector2(160, 544)
+
+[node name="Tile24" parent="." instance=ExtResource("2_st113")]
+position = Vector2(160, 544)
+
+[node name="Tile26" parent="." instance=ExtResource("2_st113")]
+position = Vector2(288, 544)
+
+[node name="Tile29" parent="." instance=ExtResource("2_st113")]
+position = Vector2(416, 608)
+
+[node name="Enemy" parent="." instance=ExtResource("3_t0sa1")]
+position = Vector2(416, 224)
+speed = 300.0
+move_distance = 256.0
+
+[node name="Enemy2" parent="." instance=ExtResource("3_t0sa1")]
+position = Vector2(32, 608)
+speed = 300.0
+move_distance = 320.0
+
+[node name="Enemy6" parent="." instance=ExtResource("3_t0sa1")]
+position = Vector2(160, 352)
+speed = 300.0
+move_distance = 704.0
+
+[node name="Enemy3" parent="." instance=ExtResource("3_t0sa1")]
+position = Vector2(544, 608)
+speed = 300.0
+move_distance = 0.0
+
+[node name="Enemy4" parent="." instance=ExtResource("3_t0sa1")]
+position = Vector2(672, 608)
+speed = 300.0
+move_distance = 0.0
+
+[node name="Enemy5" parent="." instance=ExtResource("3_t0sa1")]
+position = Vector2(800, 608)
+speed = 300.0
+move_distance = 128.0
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(576, 328)
+position_smoothing_enabled = true
+script = ExtResource("4_bdaen")
+
+[node name="AudioPlayer" type="AudioStreamPlayer2D" parent="Camera2D"]
+stream = ExtResource("7_17wtv")
+script = ExtResource("7_j3ujg")
+
+[node name="DeathAudio" type="AudioStreamPlayer2D" parent="Camera2D"]
+stream = ExtResource("7_k374t")
+script = ExtResource("8_y0vdh")
+
+[node name="Coin" parent="." instance=ExtResource("5_um6fm")]
+position = Vector2(736, 160)
+
+[node name="Coin2" parent="." instance=ExtResource("5_um6fm")]
+position = Vector2(32, 480)
+
+[node name="Coin3" parent="." instance=ExtResource("5_um6fm")]
+position = Vector2(1120, 480)
+
+[node name="Coin4" parent="." instance=ExtResource("5_um6fm")]
+position = Vector2(1120, 32)
+
+[node name="Coin5" parent="." instance=ExtResource("5_um6fm")]
+position = Vector2(224, 96)
+
+[node name="Coin10" parent="." instance=ExtResource("5_um6fm")]
+position = Vector2(96, -32)
+
+[node name="Coin6" parent="." instance=ExtResource("5_um6fm")]
+position = Vector2(352, 608)
+
+[node name="Coin7" parent="." instance=ExtResource("5_um6fm")]
+position = Vector2(608, 480)
+
+[node name="Coin8" parent="." instance=ExtResource("5_um6fm")]
+position = Vector2(800, 352)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="UI" parent="CanvasLayer" instance=ExtResource("6_hatjp")]

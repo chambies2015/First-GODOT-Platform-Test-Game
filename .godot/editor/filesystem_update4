@@ -1,0 +1,14 @@
+res://Player.tscn
+res://MainScene.tscn
+res://Player.gd
+res://PlayerTest.gd
+res://Tile.tscn
+res://Enemy.tscn
+res://Enemy.gd
+res://CameraController.gd
+res://Coin.tscn
+res://Coin.gd
+res://UI.tscn
+res://UI.gd
+res://AudioPlayer.gd
+res://DeathAudio.gd

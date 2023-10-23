@@ -1,0 +1,10 @@
+AudioStreamPlayer2D
+CanvasLayer
+Label
+TextureRect
+Control
+CollisionShape2D
+Area2D
+Camera2D
+StaticBody2D
+CharacterBody2D
